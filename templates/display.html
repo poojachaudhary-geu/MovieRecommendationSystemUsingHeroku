@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+    <style>
+        body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+    content: '';
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-image: url('https://phlearn.com/wp-content/uploads/2017/10/DIY-Horror-Movie-Poster-Winner-Header.jpg?fit=1778%2C755&quality=99&strip=all');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+.container{
+    width: 700px;
+    height: 650px;
+    margin-left: 450px;
+    margin-top: 60px;
+    background: rgba(48, 48, 48, 0.5);
+    border-radius: 10px;
+    
+    
+}
+h3{
+    padding-top: 10px;
+    margin-left: 120px;
+    color: rgb(255, 0, 140);
+    font-size: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.res1{
+    margin-left: 160px;
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+}
+.res2{
+    margin-left: 40px;
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+}
+    </style>
+ <head>
+ <title>Movie Recommendations</title>
+ </head>
+ <body>
+  <div class="container">  
+    <h3>Movie Name:</h3>
+    <div class="res1">{{ movie_title }}</div>
+ 
+    <h3>Recommendations:</h3>
+    <div class="res2">
+        <table>
+            <tr>
+                Recommended Movies:
+                <td>{{ predicted_movies }}</td>
+            </tr>
+        </table>
+ </div>
+ 
+ </body>
+</html>
