@@ -53,7 +53,7 @@ body:before {
   height: 30px;
   color: #fff;
   font-size: 15px;
-  background: red;
+  background: rgb(255, 0, 234);
   cursor: pointer;
   border-radius: 25px;
   border: none;
@@ -74,7 +74,7 @@ body:before {
     <h2>Movie recommendation system</h2>
     <form class="internalform" method="POST", action="{{url_for('results')}}">
       <p>Movie <input type = "text" name = "movie_title" /></p>
-          <p><input type="submit" name="Submit"></p>
+           <button style="font-weight:bold; border: salmon; border-radius: 5px; width: 120px; height: 30px; background:rgb(233, 0, 213); color: rgb(255, 255, 255);" type="submit">Submit</button>
     </form>
   </div>
 </body>
